@@ -28,14 +28,16 @@ See `examples/` for sample output (all formats), sample config files
 > push` picks up dotfiles correctly every time.
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>          # the folder containing run.py
+git clone https://github.com/sazzad1148/sazzadul-APRSR-Framework.git
+cd sazzadul-APRSR-Framework          # the folder containing run.py
 
 pip install -r requirements.txt --break-system-packages
 # (or, pip-installable form: pip install -e .   -- gives you the
 #  `passive-enum` command too, see section 2/17 below)
 
 cp .env.example .env       # optional -- fill in any free API keys you have
+nano .env
+
 
 python3 run.py -d example.com --profile balanced
 ```
